@@ -1,0 +1,95 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+.navbar {
+	background: linear-gradient(120deg, #84fab0, #8fd3f4);
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	font-family: Arial, sans-serif;
+	animation: glowingBackground 2s ease infinite;
+}
+
+@keyframes glowingBackground {
+	0% {
+		background: linear-gradient(120deg, #84fab0, #8fd3f4);
+	}
+	50% {
+		background: linear-gradient(120deg, #8fd3f4, #84fab0);
+	}
+	100% {
+		background: linear-gradient(120deg, #84fab0, #8fd3f4);
+	}
+}
+
+.navbar-logo {
+	height: 60px;
+	width: 60px;
+	margin-right: 20px;
+	order: -1;
+	border-radius: 50%;
+}
+
+.navbar-links {
+	list-style: none;
+	padding: 0;
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+}
+
+.navbar-links li {
+	margin-right: 30px;
+}
+
+.navbar-links li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	position: relative;
+}
+
+.navbar-links li a:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+.navbar-links li a:hover:before {
+	transform: scaleX(1);
+}
+
+.navbar-cart-icon {
+	text-decoration: none;
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+
+.navbar-cart-icon svg {
+	height: 24px;
+	width: 24px;
+	fill: #fff;
+}
+
+@keyframes glowing {
+	0% {
+		box-shadow: 0 0 5px rgba(0, 173, 181, 0.8);
+	}
+	50% {
+		box-shadow: 0 0 20px rgba(63, 191, 191, 0.8),
+			0 0 30px rgba(63, 191, 191, 0.8), 0 0 40px rgba(63, 191, 191, 0.8);
+	}
+	100% {
+		box-shadow: 0 0 5px rgba(0, 173, 181, 0.8);
+	}
+}
