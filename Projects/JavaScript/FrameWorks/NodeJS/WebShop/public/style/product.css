@@ -1,0 +1,108 @@
+/* style.css */
+
+/* Set the font family and background color for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Style the page title */
+h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Style the search bar */
+#searchBar {
+  margin: 20px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+/* Style the select element and sort button */
+#select {
+  margin: 20px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+#sortBtn {
+  margin: 20px 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style the product container */
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style the individual product cards */
+#main div {
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+/* style.css */
+
+#cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #eee;
+  padding: 10px;
+  box-sizing: border-box;
+  display: none;
+}
+
+#cart h2 {
+  margin-top: 0;
+}
+
+#cartList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#cartList li {
+  margin-bottom: 10px;
+}
+/* Add CSS styles here */
+.selected {
+  background-color: yellow;
+}
+.cart {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #888;
+  overflow-y: auto;
+}
